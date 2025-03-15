@@ -81,26 +81,26 @@ function eliminarAmigo(index) {
 
 // Función para sortear un amigo al azar
 function sortearAmigo() {
-    // ✅ Validar que haya amigos disponibles
+    //  Validar que haya amigos disponibles
     if (amigos.length === 0) {
         alert("No hay amigos para sortear");
         return;
     }
 
-    // ✅ Generar un índice aleatorio usando Math.random() y Math.floor()
+    //  Generar un índice aleatorio usando Math.random() y Math.floor()
     let indiceAleatorio = Math.floor(Math.random() * amigos.length);
 
-    // ✅ Obtener el nombre sorteado a partir del índice aleatorio
+    //  Obtener el nombre sorteado a partir del índice aleatorio
     let amigoSorteado = amigos[indiceAleatorio];
 
-    // ✅ Mostrar en consola el nombre sorteado
+    //  Mostrar en consola el nombre sorteado
     console.log(`🎉 El amigo sorteado es: ${amigoSorteado}`);
 
-    // ✅ Mostrar el resultado en el HTML
+    //  Mostrar el resultado en el HTML
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li>El amigo sorteado es: <strong>${amigoSorteado}</strong></li>`;
 
-    // ✅ Vaciar la lista después del sorteo y actualizar la interfaz
+    //  Vaciar la lista después del sorteo y actualizar la interfaz
     amigos = [];
     console.log("Lista de amigos después del sorteo:", amigos); // Mostrar la lista vacía
     renderizarAmigos();
