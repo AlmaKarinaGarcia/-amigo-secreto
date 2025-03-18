@@ -105,7 +105,7 @@ body {
 }
 
 /* Estilos de botón */
-.button {
+button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -178,4 +178,3 @@ ul {
 }
 
 
-/*Diseño responsivo*/
