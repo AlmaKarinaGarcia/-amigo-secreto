@@ -177,4 +177,78 @@ ul {
     background-color: darkred;
 }
 
+/*Diseño responsivo*/
+
+@media (max-width: 1200px) {
+    .header-banner {
+        padding: 5%;
+        text-align: center;
+        display: block !important; /* Asegura que el header sea visible */
+    }
+
+    .main-title {
+        display: block !important; /* Asegura que el título no se oculte */
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .input-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        text-align: center;
+        visibility: visible !important; /* Fuerza la visibilidad */
+    }
+
+    .section-title {
+        display: block !important; /* Asegura que el título sea visible */
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .input-name {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .button-add {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .name-list, .result-list {
+        width: 100%;
+        max-width: 320px;
+        text-align: left;
+        padding: 0;
+        display: block !important; /* Asegura que las listas sean visibles */
+    }
+
+    .button-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-draw {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
 
