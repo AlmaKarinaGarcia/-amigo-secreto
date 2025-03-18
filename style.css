@@ -105,7 +105,7 @@ body {
 }
 
 /* Estilos de botón */
-button {
+.button {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -177,17 +177,17 @@ ul {
     background-color: darkred;
 }
 
-@media(max-width:1200px){
-    .header{
+
+/*Diseño responsivo*/
+@media (max-width: 1200px) {
+    .header-banner {
         padding: 10%;
     }
-    .header_menu{
-        justify-content: center;
-    }
-    .presentacion{
+    .input-section {
         flex-direction: column-reverse;
         padding: 5%;
     }
-    .presentacion__contenido{
+    .section-title {
         width: auto;
     }
+}
